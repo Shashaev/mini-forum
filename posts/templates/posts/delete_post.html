@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %}
+
+
+{% block title %}
+    Удалить пост
+{% endblock %}
+
+{% block body %}
+    <div class="absolute_center_box">
+        <h2 class="head">Удалить пост <br>"{{ post.title }}"</h2>
+
+        <form method="post" class="form_button">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger">Удалить</button>
+        </form>
+    </div>
+{% endblock %}

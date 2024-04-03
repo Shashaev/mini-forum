@@ -1,0 +1,20 @@
+{% extends 'main/base_views.html' %}
+
+{% block title %}
+    Создание поста
+{% endblock %}
+
+{% block head %}
+    <h2>Создание поста</h2>
+{% endblock %}
+
+{% block content %}
+    <form method="post" class="post-form">
+        {% csrf_token %}
+        <p>Название:</p>
+        {{ form.title }}<br>
+        <p>Контент:</p>
+        {{ form.content }}<br>
+        <button type="submit" class="btn btn-success">Сохранить</button>
+    </form>
+{% endblock %}

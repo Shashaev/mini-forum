@@ -1,0 +1,68 @@
+
+.center_box {
+	width: 50%;
+	min-height: 100vh;
+	height: fit-content;
+	margin-left: 25%;
+	margin-right: 25%;
+	padding-bottom: 50px;
+	background-color: #5cccccbf;
+
+}
+
+.absolute_center_box {
+	width: 30vw;
+	height: 30vh;
+	margin: 0 auto;
+	margin-top: 20vh;
+	background-color: #5cccccbf;
+	border-radius: 30px;
+}
+
+.head {
+	font-size: 36px;
+	line-height: 58px;
+	text-align: center;
+	padding-top: 5%;
+	margin-bottom: 5%;
+	opacity: 0.8;
+	color: #181818;
+}
+
+.content {
+	height: fit-content;
+	margin-left: 10%;
+	margin-bottom: 5%;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 24px;
+	line-height: 39px;
+	text-align: left;
+	color: #000000;
+	mix-blend-mode: normal;
+	opacity: 0.8;
+}
+
+.form_button {
+	width:fit-content;
+	margin: 0 auto;
+	color: #000000;
+	mix-blend-mode: normal;
+	opacity: 0.8;
+}
+
+.create_post {
+	position: fixed;
+	right: 5%;
+	bottom: 5%;	
+}
+
+button a {
+    color: white;
+}
+
+a {
+	width: auto;
+	outline: none;
+	text-decoration: none;
+}

@@ -1,0 +1,15 @@
+{% extends 'main/base_views.html' %}
+
+{% block title %}
+    {{ post.title }}
+{% endblock %}
+
+{% block head %}
+    <h2>{{ post.title }}</h2>
+{% endblock %}
+
+{% block content %}
+    <p>{{ post.content }}</p>
+    <button class="btn btn-primary"><a href="{% url 'update_post' post.pk %}">Изменить</a></button>
+    <button class="btn btn-danger"><a href="{% url 'delete_post' post.pk %}">Удалить</a></button>
+{% endblock %}

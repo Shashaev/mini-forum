@@ -1,0 +1,17 @@
+{% extends 'main/base_views.html' %}
+
+{% block title %}
+    Проверка возможностей
+{% endblock %}
+
+{% block head %}
+    <h1>Интерестный сайт с интерестным содержинием</h1>
+{% endblock %}
+
+{% block content %}
+    {% for post in posts %}
+        <a href="{% url 'post' post.pk %}"><h4>{{ post.title }}</h4></a>
+    {% endfor %}
+
+    <button class="btn btn-success create_post"><a href="{% url 'create_post' %}">Создать пост</a></button>
+{% endblock %}
